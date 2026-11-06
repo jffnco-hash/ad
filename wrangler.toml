@@ -1,0 +1,17 @@
+name = "ad"
+main = "worker.js"
+compatibility_date = "2026-11-07"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "adwmx"
+database_id = "367162b1-3028-47eb-9128-2f78aeec707a"
+
+[vars]
+# "true" يعرض سبب الخطأ في التطبيق. غيّره لـ "false" بعد ما كل شي يشتغل.
+DEBUG = "true"

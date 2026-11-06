@@ -1,0 +1,13 @@
+{
+  "name": "ad-cloud-worker",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute adwmx --remote --file=./schema.sql",
+    "ping": "node ./check.mjs",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": { "wrangler": "^4" }
+}
